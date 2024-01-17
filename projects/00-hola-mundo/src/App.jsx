@@ -8,7 +8,9 @@ export function App() {
 
     return(
         <section className='App'>
-            <TwitterFollowCard 
+
+            {/* Aquí lo estoy pasando el name como PROP */}
+            {/* <TwitterFollowCard 
             isFollowing userName={"midudev"}
             name={"Jose Perez Robles"} />
 
@@ -19,7 +21,25 @@ export function App() {
 
             <TwitterFollowCard  
             isFollowing userName={"nategentile"}
-            name={"Nate Gentile"} />
+            name={"Nate Gentile"} /> */}
+
+
+            <TwitterFollowCard initialIsFollowing={false} userName={"midudev"}>
+                Miguel Angel Duran
+            </TwitterFollowCard>
+
+            <TwitterFollowCard initialIsFollowing={true} userName={"cesarBgDEV"}>
+                Cesar Balderas Guillen
+            </TwitterFollowCard>
+
+            <TwitterFollowCard >
+                Nate Gentile
+            </TwitterFollowCard>
+
+            <TwitterFollowCard initialIsFollowing={true} userName={"SaraRbs"}>
+                Sara Robles Ramirez
+            </TwitterFollowCard>
+
         </section>
     );
 };
