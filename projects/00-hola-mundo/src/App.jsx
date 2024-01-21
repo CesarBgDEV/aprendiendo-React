@@ -22,8 +22,8 @@ const users = [
       isFollowing: false
     },
     {
-        userName: 'cesarBgDEV',
-        name: 'Cesar Balderas Guillen',
+        userName: 'JulioCOT',
+        name: 'Julio COT',
         isFollowing: 'true'
     }
 ];
